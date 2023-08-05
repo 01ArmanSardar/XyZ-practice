@@ -12,14 +12,14 @@ int main()
     sort (ar,ar+n);
     while (q--)
     {
-        int l,r,mid,x;
-        cin>>l>>r>>x>>mid;
-        l=0;
-        r=n;
+        int mid,x;
+        cin>>x;
+    int    l=0;
+     int   r=n;
         bool flag =false ;
         while (l<=r)
         {
-            mid=(l+r)/2;
+         int   mid=(l+r)/2;
             if (ar[mid]==x)
             {
                 flag=true ;
@@ -36,5 +36,5 @@ int main()
         }
         if (flag ==true ) cout << "found"<<endl;
         else cout <<"not found"<<endl;
-    }
+    }//
 }
