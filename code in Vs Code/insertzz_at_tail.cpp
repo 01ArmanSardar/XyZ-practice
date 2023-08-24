@@ -8,12 +8,12 @@ public:
     Node(int val)
     {
         this->val = val;
-        this->next = next;
+        this->next = NULL;
     }
 };
-void InsertAtTail(Node *&head, int val)
+void InsertAtTail(Node *&head, int v)
 {
-    Node *newnode = new Node(val);
+    Node *newnode = new Node(v);
     if (head == NULL)
     {
         head = newnode;
@@ -43,9 +43,10 @@ int main()
     cin >> op;
     if (op == 1)
     {
-        int val;
-        cin >> val;
-        InsertAtTail(head, val);
+        int v;
+        cin >> v;
+        InsertAtTail(head, v);
     }
-    PrintLinkedList(head);
+   PrintLinkedList(head);
+    return 0;
 }
