@@ -18,11 +18,9 @@ int main()
    Node b(20);
 
    a.next=&b;
- //  b.next=NULL;
 
    cout <<a.val<<endl;
    cout <<b.val<<endl;
-   cout <<a.next<<endl;
-   cout <<&b<<endl;
+
 }
 
